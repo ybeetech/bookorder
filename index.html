@@ -269,6 +269,19 @@
   .pay-btn:active { transform: translateY(0); }
   .pay-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 
+  .india-badge {
+    display: inline-block;
+    margin-top: 12px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.75);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.04em;
+  }
+
   .secure-note {
     text-align: center;
     font-size: 12px;
@@ -314,6 +327,7 @@
     <p class="hero-sub">Build Something Real</p>
     <p class="author">by Dr. Yakub Bhetasiwala</p>
     <div class="price-badge">₹399 <span>per copy &nbsp;•&nbsp; Free Shipping</span></div>
+    <div class="india-badge">🇮🇳 Ships within India only</div>
   </div>
 </div>
 
@@ -388,7 +402,7 @@
             <div class="total-amount" id="total-display">₹399</div>
           </div>
         </div>
-        <div class="note-free-shipping">✅ Free shipping within India only</div>
+        <div class="note-free-shipping">✅ Free shipping on all orders within India only</div>
       </div>
 
       <button type="submit" class="pay-btn" id="payBtn">
@@ -411,7 +425,7 @@
 <script>
   const UNIT_PRICE = 399;
   const SHIPPING = 0;
-  const RAZORPAY_LINK = "https://rzp.io/i/YOURLINK"; // 🔁 Replace with your actual Razorpay link
+  const RAZORPAY_LINK = "https://rzp.io/rzp/pJhFQP09"; // 🔁 Replace with your actual Razorpay link
 
   let qty = 1;
 
